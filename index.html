@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandini Namdeo - Full Stack Developer</title>
+    <!-- Fonts: Space Grotesk for headings, Fira Code for tech elements, Inter for readability -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="tech-theme">
+    <div class="tech-background"></div>
+    <div class="tech-scanner"></div>
+    <div class="data-stream"></div>
+    <div class="resume-container">
+        <!-- Sidebar Section -->
+        <aside class="sidebar glass-panel">
+            <div class="profile-section">
+                <div class="profile-glow">
+                    <img src="profile.jpg" alt="Nandini Namdeo" class="profile-img"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Nandini+Namdeo&background=00F0FF&color=0B0F19&size=200&font-size=0.35'">
+                </div>
+                <h1 class="name" data-text="NANDINI NAMDEO">NANDINI NAMDEO</h1>
+                <h2 class="title type-wrap">
+                    <span class="type-text"></span><span class="cursor">_</span>
+                </h2>
+            </div>
+
+            <div class="sidebar-section contact-info">
+                <h3><i class="fas fa-terminal"></i> contact_info</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 90823 68757</li>
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:nandini050406@gmail.com">nandini050406@gmail.com</a></li>
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nandini-namdeo-0799a0314"
+                            target="_blank">in/nandini-namdeo-0799a0314</a></li>
+                    <li><i class="fab fa-github"></i> <a href="https://github.com/Nandini05060"
+                            target="_blank">github.com/Nandini05060</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Indore, MP</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section education">
+                <h3><i class="fas fa-microchip"></i> education.sys</h3>
+                <div class="ed-item">
+                    <h4>B.Tech in Computer Engineering</h4>
+                    <p class="institution">NMIMS Indore</p>
+                    <p class="date">2024 &ndash; 2028</p>
+                    <div class="gpa-box" style="display: flex; flex-direction: column; gap: 0.5rem; border-left: 2px solid var(--cyan-glow); background: rgba(0, 240, 255, 0.05); padding: 0.8rem;">
+                        <span class="clickable-result" onclick="openModal('modal-sem4')"><i class="fas fa-file-alt"></i> Sem 4: Awaited</span>
+                        <span class="clickable-result" onclick="openModal('modal-sem3')"><i class="fas fa-file-alt"></i> Sem 3: 8.81</span>
+                        <span class="clickable-result" onclick="openModal('modal-sem2')"><i class="fas fa-file-alt"></i> Sem 2: 9.08</span>
+                        <span class="clickable-result" onclick="openModal('modal-sem1')"><i class="fas fa-file-alt"></i> Sem 1: 9.26</span>
+                    </div>
+                </div>
+                <div class="ed-item clickable-result-box" style="margin-top: 1rem;" onclick="openModal('modal-class12')">
+                    <h4>Class 12 (MP Board) <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 0.3rem; color: var(--cyan-glow);"></i></h4>
+                    <p class="date">80.5% | 2024</p>
+                </div>
+                <div class="ed-item clickable-result-box" style="margin-top: 1rem;" onclick="openModal('modal-class10')">
+                    <h4>Class 10 (CBSE Board) <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 0.3rem; color: var(--cyan-glow);"></i></h4>
+                    <p class="date">87.5% | 2022</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section skills">
+                <h3><i class="fas fa-code-branch"></i> tech_stack</h3>
+                <div class="skill-category">
+                    <div class="tags glow-tags">
+                        <span>Java</span><span>Python</span><span>C++</span><span>Node.js</span><span>SQL</span>
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React/TS</span>
+                        <span>MySQL</span><span>Git</span><span>GCP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section core-competencies">
+                <h3><i class="fas fa-cogs"></i> core_competencies</h3>
+                <ul class="competency-list">
+                    <li><i class="fas fa-check-circle"></i> Full-Stack Development</li>
+                    <li><i class="fas fa-check-circle"></i> API Architecture & Design</li>
+                    <li><i class="fas fa-check-circle"></i> Database Management</li>
+                    <li><i class="fas fa-check-circle"></i> Object-Oriented Design</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section download-cv" style="text-align: center; margin-top: 1.5rem;">
+                <a href="Nandini_FinalCV.pdf" download class="btn-neon" style="display: block; width: 100%; box-sizing: border-box; text-decoration: none;">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <section class="section summary glass-panel summary-enhanced reveal">
+                <div class="section-header">
+                    <h3 class="section-title"><i class="fas fa-user-astronaut" style="margin-right: 0.5rem;"></i>
+                        Professional Summary</h3>
+                </div>
+                <div class="summary-content">
+                    <p class="lead-text">
+                        Driven Computer Engineering student at NMIMS Indore with expertise in
+                        C++, full-stack web development, and cloud architectures.
+                    </p>
+                    <p>
+                        Demonstrated ability to architect and ship end-to-end software solutions — from Java-based
+                        enterprise systems to deployed modern web applications. Active contributor to technical
+                        communities as a GDGC Design Member and ACM Club member. Seeking software engineering
+                        internships to apply practical skills, scale architectures, and accelerate industry impact.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="section projects reveal">
+                <h3 class="section-title"><span
+                        class="method">Deployed_Architectures</span></h3>
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel hover-glow" onclick="openModal('modal-digitrust')">
+                        <div class="project-image-thumb">
+                            <img src="digitrust_bank_ui.png" alt="Dashboard">
+                            <div class="overlay"><i class="fas fa-search-plus"></i> View Details</div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="hover-glitch">DigiTrust Bank System</h4>
+                            <div class="tech-stack">Node.js / MySQL / JS</div>
+                            <p>Full-stack digital banking platform featuring 10+ interconnected modules.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel hover-glow" onclick="openModal('modal-food')">
+                        <div class="project-image-thumb">
+                            <img src="food_ordering_ui.png" alt="Code">
+                            <div class="overlay"><i class="fas fa-search-plus"></i> View Details</div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="hover-glitch">Online Food Ordering</h4>
+                            <div class="tech-stack">Java (OOP) / File I/O</div>
+                            <p>End-to-end food ordering workflow console application with file persistence.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel hover-glow" onclick="openModal('modal-disney')">
+                        <div class="project-image-thumb">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&q=80" alt="Disney+ Clone">
+                            <div class="overlay"><i class="fas fa-search-plus"></i> View Details</div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="hover-glitch">Disney+ Streaming Clone</h4>
+                            <div class="tech-stack">HTML / CSS / JavaScript</div>
+                            <p>Pixel-accurate responsive front-end using Flexbox/Grid with animated carousels.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel hover-glow" onclick="openModal('modal-codecrs')">
+                        <div class="project-image-thumb">
+                            <img src="codecrs_ngo_ui.png" alt="NGO">
+                            <div class="overlay"><i class="fas fa-search-plus"></i> View Details</div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="hover-glitch">Code CSR NGO Platform</h4>
+                            <div class="tech-stack">Node.js / REST API</div>
+                            <p>Full-stack NGO platform combining a rich frontend with a Node backend.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-panel hover-glow" onclick="openModal('modal-ai')">
+                        <div class="project-image-thumb">
+                            <img src="ai_companion_ui.png" alt="AI">
+                            <div class="overlay"><i class="fas fa-search-plus"></i> View Details</div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="hover-glitch">AI Companion</h4>
+                            <div class="tech-stack">TypeScript / AI APIs</div>
+                            <p>AI-powered conversational companion leveraging TypeScript and modern LLMs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section class="section certs reveal">
+                <h3 class="section-title"><span class="method">Achievements</span></h3>
+                
+                <div class="achievements-grid">
+                    
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-image">
+                            <img src="hitnext.jpg" alt="Hitnext Challenge">
+                            <div class="achievement-overlay"><i class="fas fa-trophy"></i></div>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>1st Prize — Hitnext</h4>
+                            <p>Winner of the GDGC Hitnext Challenge.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-image">
+                            <img src="python.jpg" alt="Python Programming">
+                            <div class="achievement-overlay"><i class="fas fa-certificate"></i></div>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>Python (Scaler)</h4>
+                            <p>Mastered OOP and DSA concepts.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-image">
+                            <img src="gcloud.jpg" alt="Google Cloud Platform">
+                            <div class="achievement-overlay"><i class="fas fa-cloud"></i></div>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>GCP Certification</h4>
+                            <p>Cloud infrastructure & architecture.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-image">
+                            <img src="nptel.jpg" alt="NPTEL DBMS">
+                            <div class="achievement-overlay"><i class="fas fa-database"></i></div>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>NPTEL DBMS</h4>
+                            <p>Advanced relational models & SQL.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-image">
+                            <img src="hackathon.jpg" alt="Hackathon">
+                            <div class="achievement-overlay"><i class="fas fa-laptop-code"></i></div>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>Hackathon Star</h4>
+                            <p>Active participation in hackathons.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-image">
+                            <img src="techfest.jpg" alt="Techfest">
+                            <div class="achievement-overlay"><i class="fas fa-microchip"></i></div>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>Techfest</h4>
+                            <p>Technical festival achievements.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-image">
+                            <img src="iitbombay.jpg" alt="IIT Bombay">
+                            <div class="achievement-overlay"><i class="fas fa-university"></i></div>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>IIT Bombay Cert</h4>
+                            <p>Advanced technical certification.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-image">
+                            <img src="gdgcmember.jpg" alt="GDGC Member">
+                            <div class="achievement-overlay"><i class="fab fa-google"></i></div>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>GDGC Membership</h4>
+                            <p>Active member of Google Developer Groups.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Leadership Section -->
+            <section class="section leadership glass-panel reveal">
+                <h3 class="section-title"><span class="method">Leadership_Logs</span></h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Design Member <span class="org">| ACM Chapter, NMIMS</span></h4>
+                            <span class="date">2025 – 2026</span>
+                            <p>Spearheaded UI/UX design assets, promotional materials, and event branding for technical events.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Member <span class="org">| Placement Cell, NMIMS</span></h4>
+                            <span class="date">2025 – 2026</span>
+                            <p>Facilitating campus recruitment activities, coordinating with industry recruiters, and
+                                providing peer support in resume optimization and interview preparation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Design Member <span class="org">| GDGC, NMIMS</span></h4>
+                            <span class="date">2024 – 2025</span>
+                            <p>Spearheaded UI/UX design assets and event branding, actively supporting a vibrant community of 200+ student developers.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Class Representative</h4>
+                            <span class="date">2024 – 2025</span>
+                            <p>Acted as a core liaison between the student cohort and faculty to coordinate academic schedules and events.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Volunteer <span class="org">| Snehadhriti Foundation (NGO)</span></h4>
+                            <span class="date">2023 – Present</span>
+                            <p>Providing active community service and social impact support, reinforcing a commitment to
+                                empathetic leadership.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Result Modals -->
+    <div id="modal-sem4" class="modal">
+        <div class="modal-content glass-panel" style="text-align: center;">
+            <span class="close-btn" onclick="closeModal('modal-sem4')">&times;</span>
+            <h2 class="neon-text" style="font-family: var(--font-heading);">Semester 4 Result</h2>
+            <div style="padding: 3rem; color: var(--cyan-glow); font-size: 1.5rem; font-family: var(--font-code);">
+                <i class="fas fa-hourglass-half" style="font-size: 3rem; display: block; margin-bottom: 1rem;"></i>
+                Result Awaited
+            </div>
+        </div>
+    </div>
+    <div id="modal-sem3" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-sem3')">&times;</span>
+            <h2 class="neon-text" style="font-family: var(--font-heading); margin-bottom: 1rem;">Semester 3 Result</h2>
+            <div class="gallery">
+                <img src="sem 3.png" alt="Sem 3 Result" onerror="this.src='https://via.placeholder.com/600x400?text=Sem+3+Result'">
+            </div>
+        </div>
+    </div>
+    <div id="modal-sem2" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-sem2')">&times;</span>
+            <h2 class="neon-text" style="font-family: var(--font-heading); margin-bottom: 1rem;">Semester 2 Result</h2>
+            <div class="gallery">
+                <img src="sem 2.png" alt="Sem 2 Result" onerror="this.src='https://via.placeholder.com/600x400?text=Result+Image+Missing'">
+            </div>
+        </div>
+    </div>
+    <div id="modal-sem1" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-sem1')">&times;</span>
+            <h2 class="neon-text" style="font-family: var(--font-heading); margin-bottom: 1rem;">Semester 1 Result</h2>
+            <div class="gallery">
+                <img src="sem 1.png" alt="Sem 1 Result" onerror="this.src='https://via.placeholder.com/600x400?text=Result+Image+Missing'">
+            </div>
+        </div>
+    </div>
+    <div id="modal-class12" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-class12')">&times;</span>
+            <h2 class="neon-text" style="font-family: var(--font-heading); margin-bottom: 1rem;">Class 12 Result</h2>
+            <div class="gallery">
+                <img src="12 class.jpeg" alt="Class 12 Result">
+            </div>
+        </div>
+    </div>
+    <div id="modal-class10" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-class10')">&times;</span>
+            <h2 class="neon-text" style="font-family: var(--font-heading); margin-bottom: 1rem;">Class 10 Result</h2>
+            <div class="gallery">
+                <img src="10 class.jpg" alt="Class 10 Result">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for Projects -->
+    <div id="modal-digitrust" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-digitrust')">&times;</span>
+            <h2 class="neon-text">DigiTrust Bank Management System</h2>
+            <div class="gallery">
+                <a href="https://digi-trust-bank-management-system-lnzc-q7jeutc4y.vercel.app/" target="_blank">
+                    <img src="digitrust_bank_ui.png" alt="Dashboard">
+                </a>
+                <p class="img-caption">// Dashboard View - Click image to visit live site</p>
+            </div>
+            <ul class="bullet-list terminal-text">
+                <li>Architected and deployed a full-stack digital banking platform featuring 10+ interconnected modules.
+                </li>
+                <li>Engineered a robust Node.js backend API layer integrated with MySQL.</li>
+                <li>Generated synthetic banking datasets to simulate realistic transactional data.</li>
+            </ul>
+            <a href="https://digi-trust-bank-management-system-lnzc-q7jeutc4y.vercel.app/" class="btn-neon" target="_blank"><i class="fas fa-external-link-alt"></i>
+                Live Link</a>
+            <a href="https://github.com/Nandini05060" class="btn-neon" target="_blank" style="margin-left: 1rem;"><i class="fab fa-github"></i>
+                View Source</a>
+        </div>
+    </div>
+
+    <div id="modal-food" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-food')">&times;</span>
+            <h2 class="neon-text">Online Food Ordering System</h2>
+            <div class="gallery">
+                <a href="https://github.com/Nandini05060" target="_blank">
+                    <img src="food_ordering_ui.png" alt="Code">
+                </a>
+                <p class="img-caption">// Application Interface - Click image to view project</p>
+            </div>
+            <ul class="bullet-list terminal-text">
+                <li>Developed a feature-complete Java console application simulating an end-to-end food ordering
+                    workflow.</li>
+                <li>Implemented core OOP principles (encapsulation, inheritance, polymorphism).</li>
+                <li>Integrated file-based persistence to maintain a transaction history.</li>
+            </ul>
+            <a href="https://github.com/Nandini05060" class="btn-neon" target="_blank"><i class="fab fa-github"></i>
+                View Source</a>
+        </div>
+    </div>
+
+    <div id="modal-disney" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-disney')">&times;</span>
+            <h2 class="neon-text">Disney+ Streaming Clone</h2>
+            <div class="gallery">
+                <a href="https://disney-merchandise-website-4li9iyof2-nandini05060s-projects.vercel.app/" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&q=80" alt="Disney+ Clone">
+                </a>
+                <p class="img-caption">// Application Interface - Click image to visit live site</p>
+            </div>
+            <ul class="bullet-list terminal-text">
+                <li>Pixel-accurate responsive front-end using Flexbox/Grid with animated carousels and hover effects.</li>
+                <li>Deployed on Vercel; hands-on experience with front-end deployment and CI/CD workflows.</li>
+            </ul>
+            <a href="https://disney-merchandise-website-4li9iyof2-nandini05060s-projects.vercel.app/" class="btn-neon" target="_blank"><i class="fas fa-external-link-alt"></i>
+                Live Link</a>
+            <a href="https://github.com/Nandini05060" class="btn-neon" target="_blank" style="margin-left: 1rem;"><i class="fab fa-github"></i>
+                View Source</a>
+        </div>
+    </div>
+
+    <div id="modal-codecrs" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-codecrs')">&times;</span>
+            <h2 class="neon-text">Code CSR — NGO Social Impact Platform</h2>
+            <div class="gallery">
+                <a href="https://code-csr-ngo-website-22amdqw10-nandini05060s-projects.vercel.app/" target="_blank">
+                    <img src="codecrs_ngo_ui.png" alt="NGO Platform">
+                </a>
+                <p class="img-caption">// Platform View - Click image to visit live site</p>
+            </div>
+            <ul class="bullet-list terminal-text">
+                <li>Developed a full-stack NGO platform combining a rich HTML/CSS/JS frontend with a dedicated Node.js
+                    backend.</li>
+                <li>Architected backend modules to process volunteer registrations and donation inquiries.</li>
+            </ul>
+            <a href="https://code-csr-ngo-website-22amdqw10-nandini05060s-projects.vercel.app/" class="btn-neon" target="_blank"><i class="fas fa-external-link-alt"></i>
+                Live Link</a>
+            <a href="https://github.com/Nandini05060" class="btn-neon" target="_blank" style="margin-left: 1rem;"><i class="fab fa-github"></i>
+                View Source</a>
+        </div>
+    </div>
+
+    <div id="modal-ai" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-ai')">&times;</span>
+            <h2 class="neon-text">AI Companion — Conversational AI Agent</h2>
+            <div class="gallery">
+                <a href="https://ai-companion-cb6e.vercel.app/" target="_blank">
+                    <img src="ai_companion_ui.png" alt="AI Companion Interface">
+                </a>
+                <p class="img-caption">// Chat Interface - Click image to visit live site</p>
+            </div>
+            <ul class="bullet-list terminal-text">
+                <li>Actively developing an AI-powered conversational companion application leveraging TypeScript and
+                    modern AI APIs.</li>
+                <li>Designing scalable architecture to support multi-turn conversations, persona customization.</li>
+            </ul>
+            <a href="https://ai-companion-cb6e.vercel.app/" class="btn-neon" target="_blank"><i class="fas fa-external-link-alt"></i>
+                Live Link</a>
+            <a href="https://github.com/Nandini05060" class="btn-neon" target="_blank" style="margin-left: 1rem;"><i class="fab fa-github"></i>
+                View Source</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
